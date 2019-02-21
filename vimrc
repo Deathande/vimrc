@@ -1,4 +1,6 @@
+execute pathogen#infect()
 syntax on
+filetype plugin indent on
 set number
 set autoread
 set autoindent
@@ -9,6 +11,4 @@ vmap jk <ESC>
 map -t :NERDTree<CR>
 map <space> <c-w>
 colorscheme badWolf
-
 set directory^=$HOME/.vim/swap
-set runtimepath^=~/.vim/plugins
