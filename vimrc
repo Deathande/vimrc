@@ -1,11 +1,14 @@
+execute pathogen#infect()
 syntax on
+filetype plugin indent on
 set number
 set autoread
 set autoindent
+set expandtab
+set tabstop=4
 imap jk <ESC>
 vmap jk <ESC>
 map -t :NERDTree<CR>
 map <space> <c-w>
-let macvim_skip_colorscheme=1
 colorscheme badWolf
-let g:ruby_debugger_progname = 'mvim'
+set directory^=$HOME/.vim/swap
